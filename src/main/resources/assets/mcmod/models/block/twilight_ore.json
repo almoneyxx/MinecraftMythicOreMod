@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "mcmod:block/twilight_block"
+    "all": "mcmod:block/twilight_ore"
   }
 }

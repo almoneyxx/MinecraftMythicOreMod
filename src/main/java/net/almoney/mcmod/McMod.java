@@ -59,9 +59,9 @@ public class McMod
             event.accept(ModItems.RAWTWILIGHT);
         }
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.TWILIGHT_BLOCK);
-            event.accept(ModBlocks.LURO_BLOCK);
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.LURO_ORE);
+            event.accept(ModBlocks.TWILIGHT_ORE);
         }
     }
 
