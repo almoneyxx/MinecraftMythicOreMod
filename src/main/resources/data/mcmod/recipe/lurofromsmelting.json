@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1,
+  "group": "luroingot",
+  "ingredient": {
+    "item": "mcmod:rawluro"
+  },
+  "result": {
+    "id": "mcmod:luroingot"
+  }
+}

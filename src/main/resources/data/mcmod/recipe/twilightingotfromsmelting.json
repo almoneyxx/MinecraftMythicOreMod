@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 2,
+  "group": "twilightingot",
+  "ingredient": {
+    "item": "mcmod:rawtwilight"
+  },
+  "result": {
+    "id": "mcmod:twilightingot"
+  }
+}

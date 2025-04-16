@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 1,
+  "group": "luroingot",
+  "ingredient": {
+    "item": "mcmod:rawluro"
+  },
+  "result": {
+    "id": "mcmod:luroingot"
+  }
+}

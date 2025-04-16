@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 2,
+  "group": "twilightingot",
+  "ingredient": {
+    "item": "mcmod:rawtwilight"
+  },
+  "result": {
+    "id": "mcmod:twilightingot"
+  }
+}
