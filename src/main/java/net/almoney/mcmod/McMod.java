@@ -61,6 +61,7 @@ public class McMod
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TWILIGHT_BLOCK);
+            event.accept(ModBlocks.LURO_BLOCK);
         }
     }
 
