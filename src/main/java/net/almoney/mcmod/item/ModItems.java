@@ -17,6 +17,14 @@ public class ModItems {
     public static final RegistryObject<Item> LUROINGOT = ITEMS.register("luroingot",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RAWLURO = ITEMS.register("rawluro",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAWTWILIGHT = ITEMS.register("rawtwilight",
+            () -> new Item(new Item.Properties()));
+
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
