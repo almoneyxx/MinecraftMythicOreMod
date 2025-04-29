@@ -5,5 +5,9 @@
   "item.mcmod.rawtwilight": "Raw Twilight",
   "block.mcmod.twilight_ore": "Twilight Ore",
   "block.mcmod.luro_ore": "Luro Ore",
-  "item.mcmod.twilight_sword": "Twilight Sword"
+  "item.mcmod.twilight_sword": "Twilight Sword",
+  "item.mcmod.luro_helmet": "Luro Helmet",
+  "item.mcmod.luro_chestplate": "Luro Chestplate",
+  "item.mcmod.luro_leggings": "Luro Leggings",
+  "item.mcmod.luro_boots": "Luro Boots"
 }

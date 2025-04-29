@@ -68,6 +68,14 @@ public class McMod
             event.accept(ModItems.TWILIGHT_SWORD);
         }
 
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.LURO_HELMET);
+            event.accept(ModItems.LURO_CHESTPLATE);
+            event.accept(ModItems.LURO_LEGGINGS);
+            event.accept(ModItems.LURO_BOOTS);
+        }
+
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

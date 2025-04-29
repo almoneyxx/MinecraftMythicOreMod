@@ -1,6 +1,7 @@
 package net.almoney.mcmod.item;
 
 import net.almoney.mcmod.McMod;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,6 +29,22 @@ public class ModItems {
             () -> new SwordItem(ModToolTiers.TWILIGHT, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTiers.TWILIGHT, 4, -2.0F))
             ));
+
+    public static final RegistryObject<Item> LURO_HELMET = ITEMS.register("luro_helmet",
+            () -> new ArmorItem(ModArmorMaterials.LURO_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(22))));
+
+    public static final RegistryObject<Item> LURO_CHESTPLATE = ITEMS.register("luro_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.LURO_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(22))));
+
+    public static final RegistryObject<Item> LURO_LEGGINGS = ITEMS.register("luro_leggings",
+            () -> new ArmorItem(ModArmorMaterials.LURO_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(22))));
+
+    public static final RegistryObject<Item> LURO_BOOTS = ITEMS.register("luro_boots",
+            () -> new ArmorItem(ModArmorMaterials.LURO_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(22))));
 
 
 
