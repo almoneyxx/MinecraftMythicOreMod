@@ -2,6 +2,7 @@ package net.almoney.mcmod.item;
 
 import net.almoney.mcmod.McMod;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,6 +23,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAWTWILIGHT = ITEMS.register("rawtwilight",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TWILIGHT_SWORD = ITEMS.register("twilight_sword",
+            () -> new SwordItem(ModToolTiers.TWILIGHT, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.TWILIGHT, 4, -2.0F))
+            ));
+
 
 
 
