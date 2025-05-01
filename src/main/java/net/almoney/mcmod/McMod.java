@@ -66,9 +66,6 @@ public class McMod
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.TWILIGHT_SWORD);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.LURO_HELMET);
             event.accept(ModItems.LURO_CHESTPLATE);
             event.accept(ModItems.LURO_LEGGINGS);
