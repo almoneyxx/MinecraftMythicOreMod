@@ -17,14 +17,18 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> LURO_ORE_PLACED_KEY = registerKey("luro_ore_placed");
+    public static final ResourceKey<PlacedFeature> TWILIGHT_ORE_PLACED_KEY = registerKey("twilight_ore_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, LURO_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_LURO_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80)) ));
+                ModOrePlacement.commonOrePlacement(9,
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(10), VerticalAnchor.absolute(40)) ));
 
+        register(context, TWILIGHT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TWILIGHT_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(5,
+                        HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
 
     }
 
