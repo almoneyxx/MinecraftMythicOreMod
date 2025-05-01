@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.almoney.mcmod.item.custom.TwilightSword;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -26,7 +27,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> TWILIGHT_SWORD = ITEMS.register("twilight_sword",
-            () -> new SwordItem(ModToolTiers.TWILIGHT, new Item.Properties()
+            () -> new TwilightSword(ModToolTiers.TWILIGHT, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTiers.TWILIGHT, 4, -2.0F))
             ));
 
