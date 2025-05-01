@@ -2,6 +2,7 @@ package net.almoney.worldgen;
 
 import com.jcraft.jorbis.Block;
 import net.almoney.mcmod.McMod;
+import net.almoney.mcmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
@@ -25,8 +26,11 @@ public class ModConfiguredFeatures {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
 
 
-        List<OreConfiguration.TargetBlockState> overworldAlexandriteOres = List.of(
-                OreConfiguration.target(stoneReplaceables, ModBlocks.ALEXANDRITE_ORE.get().defaultBlockState()),
+        List<OreConfiguration.TargetBlockState> overworldLuroOres = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.LURO_ORE.get().defaultBlockState()));
+
+
+        register(context, OVERWORLD_LURO_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLuroOres, 9));
 
 
     }
