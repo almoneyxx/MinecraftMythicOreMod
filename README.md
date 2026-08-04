@@ -1,4 +1,4 @@
-## Minecraft Mythic Ore Mod
+# Minecraft Mythic Ore Mod
 A Minecraft Forge mod that introduces new ores, materials, weapons and armour to the game.
 
 ### Features
